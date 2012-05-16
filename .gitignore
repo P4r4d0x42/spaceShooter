@@ -1,0 +1,12 @@
+# Help with setup. http://www.shawn.origaminc.com/blog/?p=357
+# This is the ignore file. Commenting out .gitignore as this will used on more than one dev box
+#.gitignore
+*.unityproj
+*.csproj
+*.pidb
+*.sln
+*.userprefs
+Library/
+Supporting Files/
+Temp/
+obj/
