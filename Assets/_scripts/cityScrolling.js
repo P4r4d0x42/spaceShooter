@@ -1,5 +1,5 @@
 #pragma strict
-
+//TODO: Make it so the city rotates to a new position every time it's placed. This can be done with an array and a random selector.
 
 static var speed : float = 2;
 
