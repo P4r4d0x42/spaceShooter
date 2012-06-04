@@ -28,6 +28,13 @@ var player1 : GameObject;
 var shield  : GameObject;
 var playerDeathObj : GameObject;
 
+
+// Score and GUI
+var playerLivesTxt : Texture2D;
+var playerScore = 0;
+var style : GUIStyle;
+
+
 function Start () 
 {
 	targetSpwnDir1 = enemyTarg1.position - enemySpwn1.transform.position;
@@ -47,6 +54,15 @@ function Start ()
 function Update () 
 {
 	if (respawn == true && playerLives !=0){respawnPlayer();}
+}
+
+function OnGUI()
+{
+	GUI.Label(Rect (20, 660, 74, 85),playerLivesTxt, style);
+	GUI.Label(Rect (300, 660, 50, 50),playerLives.ToString(),style);
+	GUI.Label(Rect (300, 700, 200, 50),playerScore.ToString(),style);
+	print("OnGUI");
+
 }
 
 function SendWave1()

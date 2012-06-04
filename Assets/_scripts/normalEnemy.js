@@ -10,6 +10,10 @@ var enemyLaser : GameObject;
 var enemyDeath : GameObject;
 var deathAnim  : GameObject;
 
+// Scoring
+var gameMgObj : GameObject;
+
+
 var canBeHit = true;
 
 function Start () 
@@ -18,6 +22,7 @@ function Start ()
 	//It also ensures that the script finds each enemy's unique shootSpwn object, rather than just finding one.
 	// using transform.find instead of gameObject.Find so find all child objects of that game object.
 	shootSpwnT = this.transform.Find("shootSpwn"); 
+	gameMgObj = gameObject.Find("gameManager");
 	
 }
 	
@@ -59,6 +64,8 @@ function OnTriggerEnter(col : Collider)
 			renderer.enabled = false;
 			deathAnim = Instantiate(enemyDeath, transform.position, transform.rotation) as GameObject;
 			deathAnim.animation["death"].speed = 2;
+			var script1 = gameMgObj.transform.gameObject.GetComponent(gameManager);
+			script1.playerScore +=10000;
 		}
 	}
 }
