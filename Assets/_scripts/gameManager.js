@@ -18,6 +18,15 @@ var enemySpeed2 = 0.2;
 private var targetSpwnDir1   : Vector3;
 private var targetSpwnDir2   : Vector3;
 
+// Player life and death control
+var playerObj  : GameObject;
+var playerSpwn : GameObject;
+var respawn = false;
+var playerLives = 4;
+var script1 : Component;
+var player1 : GameObject;
+var shield  : GameObject;
+var playerDeathObj : GameObject;
 
 function Start () 
 {
@@ -37,7 +46,7 @@ function Start ()
 
 function Update () 
 {
-
+	if (respawn == true && playerLives !=0){respawnPlayer();}
 }
 
 function SendWave1()
@@ -82,6 +91,24 @@ function SendWave5()
 		var instantiatedProjectitle : GameObject = Instantiate (enemyPrefab3,enemySpwn1.transform.position, this.transform.rotation);
 		instantiatedProjectitle.rigidbody.velocity = transform.TransformDirection(targetSpwnDir1*enemySpeed2);
 		yield WaitForSeconds(1.0);
+}
+
+function destroyPlayer(dpos : Vector3)
+{
+	var player1 : GameObject = Instantiate(playerDeathObj, dpos, playerDeathObj.transform.rotation) as GameObject;
+	player1.animation["death"].speed = 3.5;
+	yield WaitForSeconds(0.5);
+	Destroy(player1);
+}
+
+function respawnPlayer()
+{
+	player1 = Instantiate(playerObj, playerSpwn.transform.position, playerObj.transform.rotation) as GameObject;
+	var script1 = player1.transform.gameObject.GetComponent(shipController); // Have to leave the "" out to make this work
+	script1.startTime = Time.time;
+	script1.shieldOn=true;
+	script1.playerInvincible = true;
+	respawn = false;
 }
 
 
