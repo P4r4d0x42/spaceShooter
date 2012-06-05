@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: ae9fa94fb761b494286d56cf5ec7ea69
+ModelImporter:
+  fileIDToRecycleName:
+    4300000: enemyShip1_Piece1
+    4300002: enemyShip1_Piece2
+    4300004: enemyShip1_Piece3
+    4300006: enemyShip1_Piece4
+    4300008: enemyShip1_Piece5
+    4300010: enemyShip1_Piece6
+    4300012: enemyShip1_Piece7
+    4300014: enemyShip1_Piece8
+    4300016: enemyShip1_Piece9
+    7400000: Take 001 //// enemy1_Death
+    7400002: death //// enemy1_Death
+    100100000: DataTemplate __Singleton__
+  serializedVersion: 10
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    generateAnimations: 3
+    bakeSimulation: 0
+    splitAnimations: 1
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: death
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      loop: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMesh: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  textMetaNamesToFileIDs:
+    //RootNode:
+      data:
+        first: 1
+        second: a6860100
+      data:
+        first: 4
+        second: 861a0600
+      data:
+        first: 111
+        second: 605fa900
+    enemyShip1_Piece1:
+      data:
+        first: 1
+        second: a4860100
+      data:
+        first: 4
+        second: 841a0600
+      data:
+        first: 23
+        second: 64182300
+      data:
+        first: 33
+        second: a45a3200
+      data:
+        first: 64
+        second: 0aa86100
+    enemyShip1_Piece2:
+      data:
+        first: 1
+        second: a2860100
+      data:
+        first: 4
+        second: 821a0600
+      data:
+        first: 23
+        second: 62182300
+      data:
+        first: 33
+        second: a25a3200
+      data:
+        first: 64
+        second: 0ca86100
+    enemyShip1_Piece3:
+      data:
+        first: 1
+        second: b0860100
+      data:
+        first: 4
+        second: 901a0600
+      data:
+        first: 23
+        second: 6e182300
+      data:
+        first: 33
+        second: ae5a3200
+      data:
+        first: 64
+        second: 0ea86100
+    enemyShip1_Piece4:
+      data:
+        first: 1
+        second: b2860100
+      data:
+        first: 4
+        second: 921a0600
+      data:
+        first: 23
+        second: 70182300
+      data:
+        first: 33
+        second: b05a3200
+      data:
+        first: 64
+        second: 02a86100
+    enemyShip1_Piece5:
+      data:
+        first: 1
+        second: a8860100
+      data:
+        first: 4
+        second: 881a0600
+      data:
+        first: 23
+        second: 66182300
+      data:
+        first: 33
+        second: a65a3200
+      data:
+        first: 64
+        second: 04a86100
+    enemyShip1_Piece6:
+      data:
+        first: 1
+        second: ae860100
+      data:
+        first: 4
+        second: 8e1a0600
+      data:
+        first: 23
+        second: 6c182300
+      data:
+        first: 33
+        second: ac5a3200
+      data:
+        first: 64
+        second: 06a86100
+    enemyShip1_Piece7:
+      data:
+        first: 1
+        second: a0860100
+      data:
+        first: 4
+        second: 801a0600
+      data:
+        first: 23
+        second: 60182300
+      data:
+        first: 33
+        second: a05a3200
+      data:
+        first: 64
+        second: 08a86100
+    enemyShip1_Piece8:
+      data:
+        first: 1
+        second: aa860100
+      data:
+        first: 4
+        second: 8a1a0600
+      data:
+        first: 23
+        second: 68182300
+      data:
+        first: 33
+        second: a85a3200
+      data:
+        first: 64
+        second: 00a86100
+    enemyShip1_Piece9:
+      data:
+        first: 1
+        second: ac860100
+      data:
+        first: 4
+        second: 8c1a0600
+      data:
+        first: 23
+        second: 6a182300
+      data:
+        first: 33
+        second: aa5a3200
+      data:
+        first: 64
+        second: 10a86100
